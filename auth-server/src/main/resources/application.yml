@@ -2,10 +2,16 @@ server:
   port: 9999
   contextPath: /uaa
 
-security:
-  user:
-    password: password
-
 logging:
   level:
     org.springframework.security: DEBUG
+
+security:
+  user:
+      password: password
+  oauth2:
+    client:
+      client-id: acme
+      client-secret: acmesecret
+      scope: read,write
+      auto-approve-scopes: '.*'

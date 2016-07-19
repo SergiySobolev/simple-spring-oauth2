@@ -19,7 +19,6 @@ public class UiApplication extends WebSecurityConfigurerAdapter {
 
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
-		// @formatter:off
 		http
 			.logout().and()
 			.authorizeRequests()
@@ -28,7 +27,6 @@ public class UiApplication extends WebSecurityConfigurerAdapter {
 				.and()
 			.csrf()
 				.csrfTokenRepository(new CookieCsrfTokenRepository());
-			// @formatter:on
 	}
 }
 

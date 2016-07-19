@@ -24,12 +24,6 @@
         <processorPath useClasspath="true" />
         <module name="auth-server" />
         <module name="client" />
-      </profile>
-      <profile default="false" name="Annotation profile for OAuth2 Resource" enabled="true">
-        <sourceOutputDir name="../resource/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../resource/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="oauth2-resource" />
       </profile>
     </annotationProcessing>
